@@ -6,5 +6,16 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-x-none': {
+          'scrollbar-width': 'none', // For Firefox (horizontal)
+          '&::-webkit-scrollbar': {
+            'height': '0px', // For Chrome, Safari, and Edge (horizontal scrollbar)
+          },
+        },
+      })
+    },
+  ],
 }

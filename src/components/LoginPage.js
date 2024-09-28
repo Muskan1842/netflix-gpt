@@ -13,8 +13,8 @@ const LoginPage = () => {
     const password = useRef(null);
 
     const handleButtonClick = () => {
-        // email.current.value = 'mush.rpt@gmail.com';
-        // password.current.value = 'mush1234'
+        email.current.value = 'mush.rpt@gmail.com';
+        password.current.value = 'mush1234'
         const message = checkValidData(email.current.value, password.current.value);
         setErrorMessage(message)
 
@@ -60,7 +60,7 @@ const LoginPage = () => {
             <div className="absolute inset-0 bg-black opacity-50 "></div>
             <Header />
             <div className='flex align-middle flex-grow z-10'>
-                <form onSubmit={(e) => { e.preventDefault() }} className='w-[450px] h-[80vh] p-14 m-auto bg-black/70 rounded-lg flex flex-col align-middle'>
+                <form onSubmit={(e) => { e.preventDefault() }} className='w-[450px] h-[70vh] p-14 m-auto bg-black/70 rounded-lg flex flex-col align-middle'>
                     <h1 className='text-3xl text-white font-bold mx-2 mb-6'>{isSigIn ? 'Sign In' : 'Sign Up'}</h1>
                     {!isSigIn ?
                         <input ref={userName} type='text' placeholder='Full Name' className='p-4 m-2 h-14 bg-transparent border border-gray-500 rounded-[4px]  text-white' /> : ''

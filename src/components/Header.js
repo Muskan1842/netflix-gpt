@@ -1,5 +1,5 @@
 import React from 'react'
-import { imageUrls } from '../utils/image-urls'
+import { imageUrls } from '../utils/constants'
 import { auth } from '../utils/firebase'
 import { useNavigate } from 'react-router-dom'
 import { signOut } from 'firebase/auth'
@@ -19,7 +19,7 @@ const Header = () => {
     }
 
     return (
-        <div className='py-4 pl-72 pr-20 z-10 bg-gradient-to-b from-black flex justify-between'>
+        <div className='py-4 pl-12 pr-20 z-10 bg-gradient-to-b from-black flex justify-between w-[100%] fixed'>
             <img src={imageUrls.NETFLIX_LOGO} alt='logo' className='w-44 '></img>
 
             {displayName &&

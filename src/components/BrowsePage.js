@@ -1,20 +1,19 @@
 import React from 'react'
 import Header from './Header'
-import useFetchNowPlayingMovies from '../hooks/useFetchNowPlayingMovies';
 import MainContainer from './MainContainer';
 import SecondaryContainer from './SecondaryContainer';
+import useFetchMovieList from '../hooks/useFetchMovieList';
 
 const BrowsePage = () => {
 
-    useFetchNowPlayingMovies();
+    useFetchMovieList();
 
     return (
-        <>
+        <div >
             <Header />
             <MainContainer />
             <SecondaryContainer />
-            <div>BrowsePage</div>
-        </>
+        </div>
     )
 }
 

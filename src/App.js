@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppContent from "./components/AppContent";
-import appStore from "./utils/appStore";
+import appStore from "./store/appStore";
 import LoginPage from "./components/LoginPage";
 import BrowsePage from "./components/BrowsePage";
 import { Provider } from "react-redux";

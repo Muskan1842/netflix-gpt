@@ -2,8 +2,8 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { auth } from "../utils/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
+import { addUser, removeUser } from "../store/userSlice";
 
 const AppContent = () => {
     const navigate = useNavigate();

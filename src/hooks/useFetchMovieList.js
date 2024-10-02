@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
-import { addNowPlayingMovies, addPopularMovies, addTopRatedMovies, addUpcomingMovies } from '../utils/movieSlice';
+import { addNowPlayingMovies, addPopularMovies, addTopRatedMovies, addUpcomingMovies } from '../store/movieSlice';
 import { API_NOW_PLAYING_MOVIES, API_OPTIONS, API_POPULAR_MOVIES, API_TOPRATED_MOVIES, API_UPCOMING_MOVIES } from '../utils/constants';
 
 const useFetchMovieList = () => {

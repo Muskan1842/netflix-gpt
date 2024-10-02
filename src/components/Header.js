@@ -4,8 +4,8 @@ import { auth } from '../utils/firebase'
 import { useNavigate } from 'react-router-dom'
 import { signOut } from 'firebase/auth'
 import { useDispatch, useSelector } from 'react-redux'
-import { toggleGptSearchView } from '../utils/gptSlice'
-import { changeLanguagePreference } from '../utils/configSlice'
+import { toggleGptSearchView } from '../store/gptSlice'
+import { changeLanguagePreference } from '../store/configSlice'
 
 const Header = () => {
     const navigate = useNavigate();
